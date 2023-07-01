@@ -34,6 +34,7 @@ theme:
     - navigation.tracking
     - navigation.tabs
     - navigation.sections
+    - content.tooltips
 
 extra:
   alternate:
@@ -44,15 +45,21 @@ extra:
       link: /zh/
       lang: zh
 
+# Python Markdown
 markdown_extensions:
+  - pymdownx.tabbed:
+      alternate_style: true
 
-  # Python Markdown
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - abbr
   - admonition
   - attr_list
   - def_list
   - footnotes
   - md_in_html
+  - pymdownx.snippets
   - toc:
       permalink: true
 
@@ -63,17 +70,16 @@ markdown_extensions:
       smart_enable: all
   - pymdownx.caret
   - pymdownx.details
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.highlight
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
@@ -84,6 +90,7 @@ plugins:
         - HTML
         - Datakit
         - K8s
+
 #  - social:
 #      cards_dir: assets/images/social
 #      cards_color:

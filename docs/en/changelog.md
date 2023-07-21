@@ -1,10 +1,14 @@
 ---
+title: '更新日志(标题)'
 tags:
   - Datakit
   - K8s
+kind:
+  - integrations
+  - datakit
 ---
 
-# 更新日志
+<!-- # 更新日志 -->
 ---
 
 <!--
@@ -84,3 +88,28 @@ tags:
           return 0;
         }
         ```
+
+### Partners and the Datadog Marketplace
+
+You may also be a partner who wants to build on Datadog and contribute to the [Datadog Marketplace][10] or to Datadog's community [integrations][6]. 
+
+{{< whatsnext desc="To develop an offering, see the appropriate documentation:" >}}
+    {{< nextlink href="/developers/integrations/agent_integration" >}}Create an Agent-based Integration{{< /nextlink >}}
+    {{< nextlink href="/developers/integrations/api_integration" >}}Create an API Integration{{< /nextlink >}}
+    {{< nextlink href="/developers/integrations/log_integration" >}}Create a Log Integration{{< /nextlink >}}
+    {{< nextlink href="/developers/integrations/marketplace_offering" >}}Build a Marketplace Offering{{< /nextlink >}}
+{{< /whatsnext >}}
+
+[1]: /help/
+[2]: https://www.datadoghq.com/partner/
+[3]: /developers/dogstatsd/
+[4]: /developers/custom_checks/write_agent_check/
+[5]: /developers/custom_checks/prometheus/
+[6]: /developers/integrations/
+[7]: https://github.com/DataDog/integrations-extras
+[8]: https://www.datadoghq.com/pricing/
+[9]: https://github.com/DataDog/integrations-core
+[10]: /developers/integrations/marketplace_offering
+[11]: /developers/custom_checks/
+[12]: /developers/service_checks/
+[13]: /developers/integrations/agent_integration
